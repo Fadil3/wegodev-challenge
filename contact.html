@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oranje - The Best Orange in The Country</title>
+        <link
+            rel="stylesheet"
+            href="frontend/libraries/bootstrap/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="frontend/styles/style.css" />
+        <link
+            rel="shortcut icon"
+            type="images/x-icon"
+            href="frontend/images/favicon/favicon-16x16.png"
+        />
+    </head>
+
+    <body>
+        <div class="wrap-container">
+            <div class="container">
+                <nav class="navbar navbar-oranje navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img
+                            src="frontend/images/favicon/android-chrome-192x192.png"
+                            width="30"
+                            height="30"
+                            alt=""
+                            loading="lazy"
+                        />
+                        Oranje
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#menu-kita"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu-kita">
+                        <ul class="navbar-nav nav-li-oranje ml-auto">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="product.html" class="nav-link"
+                                    >Product</a
+                                >
+                            </li>
+                            <li>
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li>
+                                <a href="portofolio.html" class="nav-link"
+                                    >Portofolio</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="text-center row-padding">
+                    <div class="container contact-form">
+                        <div class="contact-image">
+                            <img
+                                src="frontend/images/favicon/android-chrome-512x512.png"
+                                width="72"
+                                height="72"
+                                alt="rocket_contact"
+                            />
+                        </div>
+                        <form>
+                            <h3>Drop Us a Message</h3>
+                            <div class="row mt-5 justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="fas fa-at"></i>
+                                            </span>
+                                        </div>
+                                        <label for="inputName" class="sr-only"
+                                            >Your Name</label
+                                        >
+                                        <input
+                                            type="text"
+                                            id="sender"
+                                            class="form-control"
+                                            placeholder="Your name"
+                                            required
+                                            autofocus
+                                        />
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="far fa-envelope"></i>
+                                            </span>
+                                        </div>
+                                        <label for="inputEmail" class="sr-only"
+                                            >Email address</label
+                                        >
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            class="form-control"
+                                            placeholder="Email address"
+                                            required
+                                            autofocus
+                                        />
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                        </div>
+                                        <label for="inputPhone" class="sr-only"
+                                            >Phone</label
+                                        >
+                                        <input
+                                            type="number"
+                                            id="phone"
+                                            class="form-control"
+                                            placeholder="Phone"
+                                            required
+                                            autofocus
+                                        />
+                                    </div>
+
+                                    <div class="form-group input-group">
+                                        <label for="inputPhone" class="sr-only"
+                                            >Phone</label
+                                        >
+                                        <textarea
+                                            name="message"
+                                            id="message"
+                                            required
+                                            class="form-control"
+                                            required
+                                            placeholder="Your Message"
+                                            style="width: 100%; height: 150px"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="btn btn-success"
+                                type="submit"
+                                onclick="contact()"
+                            >
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer class="section-footer m-5 border-top">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <h5>FEATURES</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">Reviews</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Community</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Social Media Kit</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Affiliate</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h5>ACCOUNT</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Refund</a></li>
+                                        <li><a href="#">Security</a></li>
+                                        <li><a href="#">Rewards</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h5>COMPANY</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Help Center</a></li>
+                                        <li><a href="#">Media</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <h5>Get Connected</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Jakarta Selatan</li>
+                                        <li>Indonesia</li>
+                                        <li>0821 - 2222 - 8888</li>
+                                        <li>support@Oranje.id</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div
+                class="row border-top justify-content-center align-items-center pt-4"
+            >
+                <div
+                    class="col-auto text-gray-500 font-weight-light text-center"
+                >
+                    2020 Copyright Oranje • All rights reserved • Made with
+                    &#10084; by fadiil
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script
+        src="https://kit.fontawesome.com/938348fcf6.js"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        type="text/javascript"
+        src="frontend/libraries/jquery/jquery-3.5.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="frontend/libraries/popper/popper.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="frontend/libraries/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="frontend/script/contact.js"></script>
+</html>
